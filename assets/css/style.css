@@ -1,0 +1,523 @@
+:root {
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --cardinal-color: #c71e38;
+  --purple-color: #555272;
+  --mercury-color: #e0e5eb;
+  --dusk-color: #555272;
+  --gray-color: #d3d1e2;
+}
+
+h1,h2,h3,h4,h5,p{
+  padding: 0px;
+  margin: 0px;
+}
+
+
+/******************* PreLoading *****************/
+/*html, body {
+  overflow-y: hidden;
+}*/
+
+#preloading{
+  width: 100%;
+  height: 100vh;
+  background: #fff
+  url('../images/ice-cream.gif') no-repeat center;
+  z-index: 99;
+}
+
+
+/******************** Navbar ********************/
+
+.img-bg{
+  background-image: url('../images/hero-img.png');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: 91% 50%;
+  color: #fff;
+  text-align: center;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.overlay{
+  background: #10101066;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+}
+
+.main-col-heading{
+  position: relative;
+  z-index: 2;
+  padding: 0 65px;
+}
+
+.title{
+  display: inline-block;
+  margin-top: 0px;
+  margin-bottom: 31px;
+  padding: 21px;
+  border: 8px solid hsla(0, 0%, 100%, 0.38);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 78px;
+  line-height: 65px;
+  font-weight: 400;
+}
+
+
+.tag{
+  margin-bottom: 68px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 45px;
+  line-height: 54px;
+  font-weight: 300;
+}
+
+.tag-line{
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+
+
+.footer{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    border-top: 1px solid hsla(0, 0%, 100%, 0.34);
+    text-align: center;
+}
+
+.footer-nav-link{
+  display: block;
+  width: 25%;
+  height: 58px;
+  padding-top: 17px;
+  float: left;
+  border-right: 1px solid hsla(0, 0%, 100%, 0.34);
+  opacity: 0.8;
+  -webkit-transition: opacity 250ms ease, background-color 250ms ease;
+  transition: opacity 250ms ease, background-color 250ms ease;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase ;
+}
+
+
+.hamburger {
+  width: 2em;
+  height: 2em;
+  position: absolute;
+  top: 1em;
+  right: 3em;
+  z-index: 10000;
+  background: transparent;
+  cursor: pointer;
+}
+.hamburger.is-active .hamburger--container .hamburger--bars {
+  background: white;
+}
+.hamburger.is-active .hamburger--container .hamburger--bars:before, .hamburger.is-active .hamburger--container .hamburger--bars:after {
+  background: white;
+}
+.hamburger.is-active .hamburger--container .hamburger--bars:before {
+  left: 0.25em;
+}
+.hamburger.is-active .hamburger--container .hamburger--bars:after {
+  left: -0.25em;
+}
+.hamburger .hamburger--container {
+  width: 100%;
+  padding: 0.25em;
+  position: relative;
+}
+.hamburger .hamburger--container .hamburger--bars {
+  height: 3px;
+  width: 1.5em;
+  background: #000;
+  position: absolute;
+  top: 0.9em;
+  transition: 0.3s ease;
+}
+.hamburger .hamburger--container .hamburger--bars:before, .hamburger .hamburger--container .hamburger--bars:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 1.5em;
+  background: inherit;
+  position: absolute;
+  left: 0;
+  transition: 0.3s ease;
+}
+.hamburger .hamburger--container .hamburger--bars:before {
+  top: -0.5em;
+}
+.hamburger .hamburger--container .hamburger--bars:after {
+  top: 0.5em;
+}
+
+.logo {
+  width: 5em;
+  height: 5em;
+  position: absolute;
+  top: 1.5em;
+  left: 3em;
+  z-index: 10000;
+  filter: invert(1);
+}
+.logo img {
+  width: 100%;
+  display: block;
+  transition: 0.3s linear 0.3s;
+}
+.logo.is-active img {
+  filter: invert(100%);
+}
+
+.fsmenu {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  overflow: hidden;
+  display: none;
+}
+.fsmenu .fsmenu--container {
+  width: 0;
+  height: 100vh;
+  padding: 8em 3em 3em;
+  background: #000;
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+}
+.fsmenu .fsmenu--container .fsmenu--text-block {
+  width: 100%;
+  height: 100%;
+}
+.fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container {
+  width: 100%;
+  height: 100%;
+}
+.fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element {
+  width: 100%;
+  height: 25%;
+  list-style-type: none;
+  text-align: right;
+}
+.fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  transition: 0.2s ease;
+}
+.fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element a:hover {
+  color: #E63946;
+}
+.fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element a span {
+  font-size: 5em;
+  font-weight: 700;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  line-height: 1;
+  height: 1em;
+  display: inline-block;
+  position: relative;
+  z-index: 1002;
+}
+.fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element a span:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  z-index: 1003;
+}
+.fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element .fsmenu--scrolling-text {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transform: translate(-20%, -100%);
+  opacity: 0;
+  pointer-events: none;
+}
+.fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element .fsmenu--scrolling-text span {
+  height: 1em;
+  font-size: 8em;
+  font-weight: 900;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  line-height: 1;
+  color: #1e1e1e;
+  display: inline-block;
+  margin-right: 1em;
+}
+.fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element:hover .fsmenu--scrolling-text {
+  opacity: 1;
+  -webkit-animation: animScrollingContactTextLeft 9s linear 0s infinite;
+          animation: animScrollingContactTextLeft 9s linear 0s infinite;
+}
+.fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element .fsmenu--link-img {
+  width: 0px;
+  height: 100vh;
+  padding: 8em 3em 3em;
+  position: absolute;
+  top: 0;
+  right: calc(100vw - 720px);
+  z-index: 1001;
+  font-size: 16px;
+  pointer-events: none;
+}
+.fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element .fsmenu--link-img .fsmenu--img-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element .fsmenu--link-img .fsmenu--img-container img {
+  width: 624px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element.open .fsmenu--link-img {
+  left: auto;
+  right: calc(100vw - 720px);
+  -webkit-animation: animMenuRevealImg 0.4s ease 0s forwards;
+          animation: animMenuRevealImg 0.4s ease 0s forwards;
+}
+.fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element.open .fsmenu--link-img .fsmenu--img-container img {
+  right: 0;
+  left: auto;
+}
+.fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element.is-closing .fsmenu--link-img {
+  left: 0;
+  right: auto;
+  -webkit-animation: animMenuCloseImg 0.4s ease 0s forwards;
+          animation: animMenuCloseImg 0.4s ease 0s forwards;
+}
+.fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element.is-closing .fsmenu--link-img .fsmenu--img-container img {
+  left: 0;
+  right: auto;
+}
+.fsmenu.is-active {
+  display: block;
+}
+.fsmenu.is-active .fsmenu--container {
+  -webkit-animation: animMenuReveal 0.6s cubic-bezier(0.13, 0.13, 0.02, 1.07) 0s forwards;
+          animation: animMenuReveal 0.6s cubic-bezier(0.13, 0.13, 0.02, 1.07) 0s forwards;
+}
+.fsmenu.is-active .fsmenu--container .fsmenu--text-container .fsmenu--list .fsmenu--list-element a span:before {
+  -webkit-animation: animMenuRevealLinks 0.4s cubic-bezier(0.13, 0.13, 0.02, 1.07) 0.4s forwards;
+          animation: animMenuRevealLinks 0.4s cubic-bezier(0.13, 0.13, 0.02, 1.07) 0.4s forwards;
+}
+.fsmenu.close-menu {
+  display: block;
+}
+.fsmenu.close-menu .fsmenu--container {
+  width: 100vw;
+  right: auto;
+  left: 0;
+  -webkit-animation: animMenuClose 0.6s cubic-bezier(0.13, 0.13, 0.02, 1.07) 0.3s forwards;
+          animation: animMenuClose 0.6s cubic-bezier(0.13, 0.13, 0.02, 1.07) 0.3s forwards;
+}
+.fsmenu.close-menu .fsmenu--container .fsmenu--text-container .fsmenu--list .fsmenu--list-element a span:before {
+  left: auto;
+  right: 0;
+  background: black;
+  -webkit-animation: animMenuCloseLinks 0.4s cubic-bezier(0.13, 0.13, 0.02, 1.07) 0s forwards;
+          animation: animMenuCloseLinks 0.4s cubic-bezier(0.13, 0.13, 0.02, 1.07) 0s forwards;
+}
+
+@-webkit-keyframes animMenuReveal {
+  0% {
+    width: 0vw;
+  }
+  100% {
+    width: 100vw;
+  }
+}
+
+@keyframes animMenuReveal {
+  0% {
+    width: 0vw;
+  }
+  100% {
+    width: 100vw;
+  }
+}
+@-webkit-keyframes animMenuRevealLinks {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+@keyframes animMenuRevealLinks {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+@-webkit-keyframes animMenuClose {
+  0% {
+    width: 100vw;
+    padding: 8em 3em 3em;
+  }
+  100% {
+    width: 0vw;
+    padding: 8em 0 0;
+  }
+}
+@keyframes animMenuClose {
+  0% {
+    width: 100vw;
+    padding: 8em 3em 3em;
+  }
+  100% {
+    width: 0vw;
+    padding: 8em 0 0;
+  }
+}
+@-webkit-keyframes animMenuCloseLinks {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 110%;
+  }
+}
+@keyframes animMenuCloseLinks {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 110%;
+  }
+}
+@-webkit-keyframes animMenuRevealImg {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 720px;
+  }
+}
+@keyframes animMenuRevealImg {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 720px;
+  }
+}
+@-webkit-keyframes animMenuCloseImg {
+  0% {
+    width: 720px;
+  }
+  100% {
+    width: 0;
+  }
+}
+@keyframes animMenuCloseImg {
+  0% {
+    width: 720px;
+  }
+  100% {
+    width: 0;
+  }
+}
+@-webkit-keyframes animScrollingContactTextLeft {
+  0% {
+    transform: translate(-20%, -100%);
+  }
+  100% {
+    transform: translate(-40%, -100%);
+  }
+}
+@keyframes animScrollingContactTextLeft {
+  0% {
+    transform: translate(-20%, -100%);
+  }
+  100% {
+    transform: translate(-40%, -100%);
+  }
+}
+
+
+
+.thumbnail {
+    margin-right: 10px;
+    padding: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    background-color: #fcfcfc;
+}
+
+.image-wrapper {
+    width: 20%;
+    padding-right: 10px;
+    float: left;
+    text-align: center;
+}
+
+.article {
+    position: relative;
+    z-index: 3;
+    display: block;
+    padding: 40px;
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.12);
+    -webkit-transition: background-color 300ms ease, color 300ms ease;
+    transition: background-color 300ms ease, color 300ms ease;
+    color: #000;
+    text-decoration: none;
+}
+
+.container-fluid {
+    display: flex;
+  }
+
+  .hero-row {
+    flex: 1; display: flex; height: 100%;
+  }
+
+  .custom-col {
+    flex: 1; height: 100%; overflow-y: hidden; padding: 0px;
+  }
+
+  .scrollable-col {
+    flex: 1; height: 100%; overflow-y: auto;
+  }
+
+  body {
+    overflow-y: auto; 
+    margin: 0; 
+  }
