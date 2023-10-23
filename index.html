@@ -629,35 +629,7 @@
 <script type="text/javascript" src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 <script type="text/javascript" src="assets/js/main.js"></script>
-<script type="text/javascript">
-  $(document).ready(function(){
-    $('.hamburger').click(function(){
-      var $this = $( this );
-      if ($this.hasClass('is-active')){
-        $('.fsmenu, .logo').removeClass('is-active');
-        $('.fsmenu, .logo').addClass('close-menu');
-        $('.fsmenu.close-menu').css("display", "none");
-        
-      } else{
-        $('.fsmenu, .logo').removeClass('close-menu');
-        $('.fsmenu, .logo').addClass('is-active');
-        $('.fsmenu.close-menu').css("display", "block");
-       
-      };
-      $this.toggleClass('is-active');
-    });
-    $( ".fsmenu--list-element" ).hover(
-      function() {
-        $( this ).addClass('open');
-        $( this ).removeClass('is-closing');
-      }, function() {
-        $( this ).removeClass('open');
-        $( this ).addClass('is-closing');
-       
-      }
-      );
-  });
-</script>
+
 
 </body>
 </html>
