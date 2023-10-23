@@ -114,12 +114,18 @@ h1,h2,h3,h4,h5,p{
 }
 
 .footer-nav-link:hover{color: #ffffff; background-color: #ffffff4a;}
-    
+
+header{ 
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-end;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.12);
+}
 
 .hamburger {
   width: 2em;
   height: 2em;
-  position: absolute;
+  position: initial;
   top: 1em;
   right: 3em;
   z-index: 10000;
@@ -529,3 +535,5 @@ body {overflow-y: auto; margin: 0;}
 
 .custom-col-mob{display: none;}
 .menu-text{display: none;}
+
+.footer-mob{display: none;}
