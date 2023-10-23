@@ -34,7 +34,7 @@
 
 @media only screen and (max-width: 767px){
 
-  body{height:inherit;}
+  body{height:inherit !important;}
 
   .fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element a span{height: 0;}
 
