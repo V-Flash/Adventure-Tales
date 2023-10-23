@@ -1,32 +1,31 @@
- function loading() {
-    var cacheBuster = new Date().getTime(); // Generate a cache-busting parameter based on the current time
-    var preloading = document.getElementById('preloading');
-    preloading.style.display = 'none';
-    preloading.style.background = 'url("../images/ice-cream.gif?' + cacheBuster + '")'; // Add the cache-busting parameter to the URL of the preloading image
-    document.documentElement.style.overflowY = 'auto';
-    document.body.style.overflowY = 'auto';
-  }
+ $(document).ready(function(){
+    $('.hamburger').click(function(){
+      var $this = $( this );
+      if ($this.hasClass('is-active')){
+        $('.fsmenu, .logo').removeClass('is-active');
+        $('.fsmenu, .logo').addClass('close-menu');
+        $("body").css("overflow-y", "auto");  
 
+        setTimeout(function() {
+          $('.fsmenu').css('z-index', -1);
+        }, 500); 
 
-  window.addEventListener("scroll", function () {
-  var columns = document.querySelectorAll(".image-container");
-
-  columns.forEach(function (column) {
-    var images = column.querySelectorAll(".whatwedo-img");
-
-    images.forEach(function (image) {
-      var imagePosition = image.getBoundingClientRect().top;
-      var screenPosition = window.innerHeight / 1.2;
-
-      if (imagePosition < screenPosition) {
-        image.classList.add("custom-animation");
-      } 
-      else {
-        image.classList.remove("custom-animation");
-      }
-
+      } else{
+        $('.fsmenu, .logo').removeClass('close-menu');
+        $('.fsmenu, .logo').addClass('is-active');
+        $("body").css("overflow-y", "hidden");
+        $('.fsmenu').css('z-index', 5);
+      };
+      $this.toggleClass('is-active');
     });
-
+    $( ".fsmenu--list-element" ).hover(
+      function() {
+        $( this ).addClass('open');
+        $( this ).removeClass('is-closing');
+      }, function() {
+        $( this ).removeClass('open');
+        $( this ).addClass('is-closing');
+       
+      }
+      );
   });
-
-});
