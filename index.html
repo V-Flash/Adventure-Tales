@@ -636,11 +636,13 @@
       if ($this.hasClass('is-active')){
         $('.fsmenu, .logo').removeClass('is-active');
         $('.fsmenu, .logo').addClass('close-menu');
-        $(".fsmenu").css("z-index", "0");
+        $('.fsmenu.close-menu').css("display", "none");
+        
       } else{
         $('.fsmenu, .logo').removeClass('close-menu');
         $('.fsmenu, .logo').addClass('is-active');
-        $(".fsmenu").css("z-index", "5");
+        $('.fsmenu.close-menu').css("display", "block");
+       
       };
       $this.toggleClass('is-active');
     });
@@ -651,6 +653,7 @@
       }, function() {
         $( this ).removeClass('open');
         $( this ).addClass('is-closing');
+       
       }
       );
   });
