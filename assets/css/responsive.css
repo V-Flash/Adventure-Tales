@@ -19,7 +19,8 @@
 @media (max-width: 1080px) {}
 
 @media (max-width: 993px) {
-  .title{font-size:45px;
+  .title{font-size:45px;}
+  .main-col-heading {padding:0px;}
 }
 
 @media only screen and (max-width: 768px){
