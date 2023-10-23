@@ -538,3 +538,52 @@ body {overflow-y: auto; margin: 0;}
 .menu-text{display: none;}
 
 .footer-mob{display: none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header-image {
+    position: relative;
+    height: 470px;
+    padding-top: 49px;
+    background-image: url(../images/hero-img.png);
+    background-position: 50% 0px;
+    background-position-y: 50%;
+    background-size: cover;
+}
+
+.header-container {
+    padding-top: 345px;
+}
+
+.hollow-button {
+    display: inline-block;
+    padding: 7px 15px;
+    border: 3px solid #fff;
+    -webkit-transition: border-color 250ms ease;
+    transition: border-color 250ms ease;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.author-image {
+    display: block;
+    margin: -70px auto 18px;
+    border: 7px solid #fff;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12);
+    position: relative;
+    z-index: 1;
+}
