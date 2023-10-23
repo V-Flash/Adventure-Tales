@@ -636,9 +636,11 @@
       if ($this.hasClass('is-active')){
         $('.fsmenu, .logo').removeClass('is-active');
         $('.fsmenu, .logo').addClass('close-menu');
+        $(".fsmenu").css("z-index", "0");
       } else{
         $('.fsmenu, .logo').removeClass('close-menu');
         $('.fsmenu, .logo').addClass('is-active');
+        $(".fsmenu").css("z-index", "5");
       };
       $this.toggleClass('is-active');
     });
