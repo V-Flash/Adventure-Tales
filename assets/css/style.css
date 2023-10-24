@@ -744,3 +744,7 @@ body {overflow-y: auto; margin: 0;}
     text-decoration: none;
     text-transform: uppercase;
 }
+
+.subscribe-input-div{display: flex;justify-content: center;}
+
+.sub-btn{padding: 0px 40px;}
