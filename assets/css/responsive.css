@@ -145,7 +145,7 @@
 
 @media only screen and (max-width : 320px){
   
-.heading{font-size: 28px;}
+.heading{font-size: 25px;}
 .subscribe{font-size: 13px;}
 .fsmenu .fsmenu--container {padding: 8em 0.3em 3em;}
 .about .author-container{flex-direction: column;}
