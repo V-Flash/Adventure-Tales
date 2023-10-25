@@ -17,7 +17,7 @@ h1,h2,h3,h4,h5,p{
 /******************* PreLoading *****************/
 
 
-body {overflow-y: auto; margin: 0;height: 100vh;}
+body{overflow-y: auto; margin: 0;height: 100vh;}
 
 #preloading{
   width: 100%;
@@ -789,3 +789,11 @@ header{
 .btn-dark-sub:hover{background-color: #0050b8e0;border-color: #0050b8;}
 
 .btn-dark-sub:focus{box-shadow: none !important;}
+
+
+
+.div-404{position: absolute;top: 28%;left: 50%;}
+.oops{font-size: 8em;font-weight: 900;}
+.para-404{margin-top: 10px;padding: 0 15px;font-size: 32px;font-weight: 400;margin-bottom: 15px;}
+.home-link{padding: 5px 15px;margin: 15px;font-size: 1.5em;border:solid;border-color:black;text-decoration:none;color: black;}
+.home-link:hover{background-color: black; color:#fff;}
