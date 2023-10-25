@@ -2,6 +2,12 @@
 
 @media only screen and (max-width : 1680px) {}
 
+@media only screen and (max-width : 1593px) {
+
+  .btn-dark-sub {width: 30%;}
+
+}
+
 @media only screen and (max-width : 1536px) {}
 
 @media only screen and (max-width : 1440px) {}
@@ -18,10 +24,8 @@
 
 @media only screen and (max-width : 1199px){
 
-  .about-author {
-      padding-left: 30px;
-      padding-right: 30px;
-  }
+  .about-author {padding-left: 30px;padding-right: 30px;}
+  .btn-dark-sub {width: 50%;}
 
 }
 
@@ -35,7 +39,6 @@
   .main-col-heading{padding: 0px;}
   .title{padding: 0px;font-size:45px;}
   .tag{font-size: 40px;}
-
   .article{padding:15px;}
   .article-text-wrapper p{font-size:15px;line-height:normal;}
 
@@ -43,55 +46,34 @@
 
 @media only screen and (max-width: 767px){
 
-  body{height:inherit !important;}
-
+  body{min-height:100vh !important;position: relative;}
+  main{margin-bottom: 90px;}
   .fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element a span{height: 0;}
-
   .custom-col{display: none;}
   .custom-col-mob{display: block;}
-
   .img-bg{height:100%;justify-content: flex-start;}
-
-  .main-col-heading{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;margin-left: 20px;}
-
+  .main-col-heading{display: flex;justify-content: flex-start;align-items: center;margin-left: 20px;}
   .tag-line {text-align: justify;margin-left: 25px;}
-
   .title{margin-top:30px;margin-bottom:30px;font-size:30px;}
-
   .custom-col-mob{padding:0px;}
-
   .container-fluid{height: initial !important;}
-
   .scrollable-col {flex: none;}
-
   .menu-text{display: flex;align-items: center;align-items: baseline;font-size:19px;}
-
   .thumbnail-title {font-size: 25px;}
-
   .article {padding: 40px;}
   .article-text-wrapper p{margin-top:10px;}
-
-  .footer-mob{display:block;background: black;position:relative;}
-
+  .footer-mob{display:block;background: black;position:absolute;bottom:0px;}
   .about-author{padding-left:0px;padding-right:0px;}
-
   .author-container {display: flex;align-items: center; gap: 20px; }
-
   .author-image {margin: 0px;}
-
   .name {font-size: 24px;margin-top:0px;text-align: left;}
-
   .about-text {font-size: 16px;text-align: left;margin-bottom: 0px;}
-
   .article-info-wrapper{display: block;}
   .author-social-links{align-items: flex-start !important;}
-
   .subscribe-input-div{display:block !important;}
   .sub-btn{padding: 0px 40px;}
-
+  .btn-dark-sub {width: 30%;}
+  .p-40{padding:20px;}
 }
 
 @media only screen and (max-width : 590px){
@@ -100,22 +82,14 @@
   .fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element{height:12%;}
   .fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element a span{font-size:3em;}
   .container-fluid{flex: initial !important;}
-
+  .btn-dark-sub {width: 100%;}
 }
 
 @media only screen and (max-width: 480px){
 
-  .thumbnail-title {font-size: 20px;}
-
-  .sub-btn{
-    width: 100%;
-    padding: 10px;
-    border-radius: 0;
-    margin-top: 10px;
-  }
-
+  .thumbnail-title{font-size:20px;}
+  .sub-btn{width:100%;padding:10px;border-radius:0;margin-top:10px;}
   .subscribe-input-div .input-group{display: block;}
-
   .subscribe-input-div .input-group input{width:100%;}
 
 }
@@ -125,19 +99,23 @@
   .title{font-size:22px;}
   .tag-line{margin-left:15px;}
   .article-info-text{padding: 4px 2px;}
-
-  .article{padding: 40px 10px;}
-
+  .article{display: flex;flex-direction: column;gap: 10px;padding: 40px 10px;}
+  .thumbnail{width: 100%}
 }
 
 @media only screen and (max-width: 400px){
   .main-col-heading{flex-direction: column;}
   .title{line-height: normal;margin-bottom: 0px;}
   .tag-line{margin-left: inherit !important;margin: 10px 0px;}
- 
+
 }
 
 
-@media only screen and (max-width : 390px){}
+@media only screen and (max-width : 390px){
+
+ .content-section.footer{display: flex;flex-direction: column;gap: 10px;}
+
+}
+
 @media only screen and (max-width : 360px){}
 @media only screen and (max-width : 320px){}
