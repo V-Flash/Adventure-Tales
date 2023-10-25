@@ -46,7 +46,7 @@
 
 @media only screen and (max-width: 767px){
 
-  body{min-height:100vh !important;position: relative;}
+  body{min-height:100vh;position: relative;height: auto;}
   main{margin-bottom: 90px;}
   .fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element a span{height: 0;}
   .custom-col{display: none;}
