@@ -12,6 +12,14 @@
 
 @media only screen and (max-width : 1440px) {}
 
+@media only screen and (max-width : 1399px) {
+
+  .div-404{top:25%;}
+
+}
+
+
+
 @media only screen and (max-width : 1366px) {}
 
 @media only screen and (max-width : 1280px) {
@@ -26,6 +34,7 @@
 
   .about-author {padding-left: 30px;padding-right: 30px;}
   .btn-dark-sub {width: 50%;}
+  .div-404 {top: 15%;}
 
 }
 
@@ -74,6 +83,9 @@
   .sub-btn{padding: 0px 40px;}
   .btn-dark-sub {width: 30%;}
   .p-40{padding:20px;}
+  .subscribe-form.g-3{--bs-gutter-y: 0.5rem !important;--bs-gutter-x: 0.5rem !important;}
+
+
 }
 
 @media only screen and (max-width : 590px){
@@ -86,7 +98,7 @@
 }
 
 @media only screen and (max-width: 480px){
-
+  .heading{font-size: 35px;}
   .thumbnail-title{font-size:20px;}
   .sub-btn{width:100%;padding:10px;border-radius:0;margin-top:10px;}
   .subscribe-input-div .input-group{display: block;}
@@ -113,13 +125,18 @@
 
 @media only screen and (max-width : 390px){
 
+ .heading{font-size: 30px;}
  .content-section.footer{display: flex;flex-direction: column;gap: 10px;}
+ .fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element a span {font-size: 2.6em;}
 
 }
 
 @media only screen and (max-width : 360px){}
-@media only screen and (max-width : 320px){
 
-  .subscribe{font-size:13px}
+@media only screen and (max-width : 320px){
   
+.heading{font-size: 28px;}
+.subscribe{font-size: 13px;}
+.fsmenu .fsmenu--container {padding: 8em 0.3em 3em;}
+
 }
