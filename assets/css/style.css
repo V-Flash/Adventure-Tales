@@ -804,3 +804,5 @@ header{
 .about .author-container {display: flex;align-items: flex-start; gap: 20px; }
 .about .author-image {margin: 0px;}
 .about .author-details .name{text-align:left;margin-top:0px;}
+.about .author-header{display: flex;gap: 22px;}
+.about-para-sm{display: none;}
