@@ -2,17 +2,11 @@
 <html>
 <body>
 
+<p id="demo"></p>
 
-<p id="demo1"></p>
-<p id="demo2"></p>
 <script>
-var w = window.innerWidth;
-var h = window.innerHeight;
-
-var x = document.getElementById("demo1");
-var z = document.getElementById("demo2");
-x.innerHTML = " width: " + w ;
-z.innerHTML = " height: " + h ;
+document.getElementById("demo").innerHTML = 
+"Screen width is " + screen.width;
 </script>
 
 </body>
