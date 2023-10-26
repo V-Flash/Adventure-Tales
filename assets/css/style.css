@@ -806,3 +806,7 @@ header{
 .about .author-details .name{text-align:left;margin-top:0px;}
 .about .author-header{display: flex;gap: 22px;}
 .about-para-sm{display: none;}
+
+
+.display-block{display: block !important; padding:0px;}
+.display-none{display: none !important;}
