@@ -45,10 +45,10 @@ $(document).ready(function() {
         $('.custom-col-mob').addClass("col-md-12");
         $('.custom-col-mob').removeClass("col-md-6");
         $(".footer-mob").addClass("display-block");
-        $(".tag-line").css("padding-bottom", "40");
+        $(".footer").addClass("t0-b-unset");
       }
       else{
-        $(".tag-line").css("padding-bottom", "0");
+        $(".footer").removeClass("t0-b-unset");
       }
     }
   }
