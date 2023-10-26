@@ -45,7 +45,11 @@ $(document).ready(function() {
         $('.custom-col-mob').addClass("col-md-12");
         $('.custom-col-mob').removeClass("col-md-6");
         $(".footer-mob").addClass("display-block");
-      } 
+        $(".tag-line").css("padding-bottom", "40");
+      }
+      else{
+        $(".tag-line").css("padding-bottom", "0");
+      }
     }
   }
 
