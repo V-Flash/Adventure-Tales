@@ -30,32 +30,3 @@
   });
 
 });
-
-
-
-
-$(document).ready(function() {
-  const mediaQuery = window.matchMedia('(max-width: 620px)');
-
-  function checkScreenOrientation() {
-    if (mediaQuery.matches) {
-      if (window.innerHeight > window.innerWidth) {
-        $(".custom-col").addClass("display-none");
-        $(".custom-col-mob").addClass("display-block");
-        $('.custom-col-mob').addClass("col-md-12");
-        $('.custom-col-mob').removeClass("col-md-6");
-        $(".footer-mob").addClass("display-block");
-        $(".footer").addClass("t0-b-unset");
-      }
-      else{
-        $(".footer").removeClass("t0-b-unset");
-      }
-    }
-  }
-
-  checkScreenOrientation();
-
-  $(window).on('resize', function() {
-    checkScreenOrientation();
-  });
-});
