@@ -61,7 +61,7 @@
 @media only screen and (max-width: 767px){
 
   body{min-height:100vh;position: relative;height: auto;}
-  main{margin-bottom: 90px;}
+  main{margin-bottom:75px;}
   .fsmenu .fsmenu--container .fsmenu--text-block .fsmenu--text-container .fsmenu--list .fsmenu--list-element a span{height: 0;}
   .custom-col{display: none;}
   .custom-col-mob{display: block;}
@@ -112,6 +112,7 @@
   .subscribe-input-div .input-group input{width:100%;}
   .about-para-sm{display: block;}
   .about-para-lg{display: none;}
+  .btn-dark-sub {width: 100%;}
 }
 
 @media only screen and (max-width: 425px){
@@ -145,7 +146,7 @@
 
 @media only screen and (max-width : 320px){
   
-.heading{font-size: 25px;}
+.heading{font-size: 28px;}
 .subscribe{font-size: 13px;}
 .fsmenu .fsmenu--container {padding: 8em 0.3em 3em;}
 .about .author-container{flex-direction: column;}
