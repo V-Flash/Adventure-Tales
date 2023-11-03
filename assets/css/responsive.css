@@ -115,6 +115,14 @@
   .btn-dark-sub {width: 100%;}
 }
 
+@media only screen and (max-width: 469px) and (min-width: 426px){
+
+.title {margin-top: 30px;margin-bottom: 20px;font-size: 25px;padding: 5px;}
+.main-col-heading{flex-direction: column;}
+.tag-line{margin-left:0px;margin-bottom: 10px;}
+
+}
+
 @media only screen and (max-width: 425px){
 
   .title{font-size:22px;}
